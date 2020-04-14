@@ -10,11 +10,12 @@ import UIKit
 
 class DashBoardVC: UIViewController {
     
+    @IBOutlet weak var menuView: UIView!
     @IBOutlet weak var menuTable: UITableView!
     @IBOutlet weak var menuLeadingConstraint: NSLayoutConstraint!
     @IBOutlet weak var menuList: UITableView!
     var viewmodel = DashBoardViewModel()
-    var menuToggle = false
+    var menuToggle = true
     override func viewDidLoad() {
         super.viewDidLoad()
        // menuList.register(MenuCell.self, forCellReuseIdentifier: MenuCell.identifier)
@@ -28,6 +29,7 @@ class DashBoardVC: UIViewController {
             self.menuToggle = false
         } else {
             self.menuLeadingConstraint.constant = 0
+            self.view.bringSubviewToFront(menuView)
             self.menuToggle = true
         }
         UIView.animate(withDuration: 0.4, delay: 0.0, options: .curveEaseIn, animations: {
@@ -55,7 +57,7 @@ extension DashBoardVC: UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch viewmodel.deviceList[indexPath.row] {
         case MenuList.home.rawValue:
-            
+            toggleMenu()
             break
         case MenuList.ecg.rawValue:
             let storyBoard = UIStoryboard(name: "Main", bundle: nil)
