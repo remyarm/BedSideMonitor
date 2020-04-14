@@ -57,8 +57,11 @@ extension DashBoardVC: UITableViewDelegate,UITableViewDataSource {
         case MenuList.home.rawValue:
             
             break
-        case MenuList.ecg.rawValue: break
-            
+        case MenuList.ecg.rawValue:
+            let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyBoard.instantiateViewController(withIdentifier: "GraphViewController")
+            navigationController?.pushViewController(vc, animated: true)
+            break
         default:
             break
             

@@ -25,14 +25,7 @@ class GraphUI: UIView {
     var currentRect: CGPoint = CGPoint(x: 0, y: 0)
     var x_Axis = 0.0
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-    }
-    
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
+   
     func drawLineGraph(count: Int, value: Double) {
         context?.setLineWidth(2.0)
         context?.setStrokeColor(UIColor.white.cgColor)
