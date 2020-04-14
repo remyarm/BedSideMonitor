@@ -1,0 +1,1016 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		075901CD5DEFB4EA0B2A0214D7B9D1BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		09FFFE87E3D1624FBB2BC6CA110022C8 /* Pods-BedSideMonitorTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D599EABEC10CB6DB7C79FE46C602175F /* Pods-BedSideMonitorTests-dummy.m */; };
+		0CF1D3AF46AB4DFF8CEB3EB86D938125 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		14179EA474580AA5AF7DD3C10011CDFC /* MQTTPubAck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8E02B3668970B5494CBDE39DD07AA8 /* MQTTPubAck.swift */; };
+		18710F49681E2F11130C0EF2006D224D /* MQTTSubPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE6E2E90F09007F722A2B2C380630D4 /* MQTTSubPacket.swift */; };
+		1D7133637BF2B0A412F74B0F350DFCC1 /* Pods-BedSideMonitorUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CA0ED5C34D050A7D8832E3729C52B3BE /* Pods-BedSideMonitorUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2081DF0FC40141423DC365E129DB37DB /* MQTTExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4DBCF497B50953ADE1E9594289F40C /* MQTTExtensions.swift */; };
+		25226492504DE4BD91BC458E8B54D3A6 /* MQTTPubMsg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14308C03C767AFB6B9DB49D5FDC951A4 /* MQTTPubMsg.swift */; };
+		30F691C20731C511D28213812FD9035E /* MQTTPublishPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F398787A8BC7663040AB6E97C1176D /* MQTTPublishPacket.swift */; };
+		39B3A84EF4F64F4144C249BD65E322BC /* MQTTPacketFixedHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C08A388C73409A68DC429D8442D430 /* MQTTPacketFixedHeader.swift */; };
+		3D9CE4D44B243089B78979726E85F6FD /* Pods-BedSideMonitor-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0319EDFD3A3337171BEB55365070AFE6 /* Pods-BedSideMonitor-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C3097A74522B36C654FAD34DDC6341D /* Pods-BedSideMonitor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E99FACCE6060082BFB9AB03626AB7130 /* Pods-BedSideMonitor-dummy.m */; };
+		4ECDA81926B8E371B4DF9199C3B996B4 /* MQTTUnSubAckPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF5D0B6968388BB23BA9DC44D9376B0 /* MQTTUnSubAckPacket.swift */; };
+		56473A0520B8E6BE58C51511E6E3BCEC /* Pods-BedSideMonitorUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA33BB0651A93009F6C6398E12BEE18 /* Pods-BedSideMonitorUITests-dummy.m */; };
+		56EC41D24FCB83BC8953342BD913DDD1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		59B01C9441520DED6B68D60FF8D88EFC /* MQTTSubAckPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A1955401DE9E97DAF9D02D6F37E456 /* MQTTSubAckPacket.swift */; };
+		5C0C2B1C1ED23AD892C5DF297F618827 /* MQTTConnectPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0285894F5101C5724D84136C3B0F7DF8 /* MQTTConnectPacket.swift */; };
+		661F9C3A201DB7F60E05D5B87E8C863F /* SwiftMQTT-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FE687672CB100DEE17C1EB5F5404C18 /* SwiftMQTT-dummy.m */; };
+		676AC13DC427BA04286FBACF9DC4EBFC /* MQTTSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A48A2C383C542ADA91FC516568F185D /* MQTTSession.swift */; };
+		71A70C2287CAFE72F0E08F03F89A2338 /* MQTTPingPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED49D3D243672D7CBF066833EE4C83E /* MQTTPingPacket.swift */; };
+		72459DA815446316218650099E7E8D25 /* MQTTPacketFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03395480D642FAB07EC49ED9FA2DEB17 /* MQTTPacketFactory.swift */; };
+		9A70B04349569582DE88F341FD748569 /* MQTTPingResp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F856F622290AF207D33BFD8E71619E8C /* MQTTPingResp.swift */; };
+		A2689232701B201ECF9AD70043C1CCBE /* MQTTSessionStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0079FB1133D7B2C79E0B4847545064D /* MQTTSessionStream.swift */; };
+		A50732AACF3F918A4E449BDB5D7CC3A0 /* MQTTDisconnectPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3283193BF69012C2A8FCFDB1445671E6 /* MQTTDisconnectPacket.swift */; };
+		A64002CF4293C3FD08524ED0BA1C48BD /* Pods-BedSideMonitorTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E4E2C0DA147E4E9976162C6175A60E77 /* Pods-BedSideMonitorTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9C5E7DBCFF8C9E69B72F4794ABDDB86 /* MQTTMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07A867390974D28DA10AAE684AE25A2 /* MQTTMessage.swift */; };
+		AABFB7AA742C444F5AD25878ABDABE53 /* MQTTConnAckPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CF0E4D19726F0700E8A24D38643DDF /* MQTTConnAckPacket.swift */; };
+		C82D23DC65C667BBB0769E184FFEF4D7 /* MQTTStreamable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD00CAAE98D875119E231D1293C8BFC /* MQTTStreamable.swift */; };
+		CA06753581B4D7EEED89D23AD3BCBB2C /* MQTTUnsubPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D16BF6AAE9DDF3A0EBCDEA6FAF9F54 /* MQTTUnsubPacket.swift */; };
+		D9736763DE43EFAD4F21CD098DB31E24 /* MQTTPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5BD953DF9292E47C86153D03DFD0F4 /* MQTTPacket.swift */; };
+		EEDD73C13523D37C410720A6D2D0DE98 /* SwiftMQTT-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C8C133E32A0D130FA621587BBC22019 /* SwiftMQTT-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F09B1C9AB7C91314EC492B7E3BC432F0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		142AA81DB489284F146418F10ACD312A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9879B62F6BD65A957E884DCE1D5E85C;
+			remoteInfo = "Pods-BedSideMonitor";
+		};
+		D309FA1F46E6E6D79182DCD7076649AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9879B62F6BD65A957E884DCE1D5E85C;
+			remoteInfo = "Pods-BedSideMonitor";
+		};
+		DE1D787CE69C2C8B4B89C1C2FE5C09D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C392BA1BC915B8D2EFB8138275B7319A;
+			remoteInfo = SwiftMQTT;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0030A9FB40DB828230E323A5013089BA /* Pods-BedSideMonitor-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BedSideMonitor-acknowledgements.plist"; sourceTree = "<group>"; };
+		0285894F5101C5724D84136C3B0F7DF8 /* MQTTConnectPacket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTConnectPacket.swift; path = SwiftMQTT/SwiftMQTT/Models/MQTTConnectPacket.swift; sourceTree = "<group>"; };
+		0319EDFD3A3337171BEB55365070AFE6 /* Pods-BedSideMonitor-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BedSideMonitor-umbrella.h"; sourceTree = "<group>"; };
+		03395480D642FAB07EC49ED9FA2DEB17 /* MQTTPacketFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTPacketFactory.swift; path = SwiftMQTT/SwiftMQTT/Models/MQTTPacketFactory.swift; sourceTree = "<group>"; };
+		03D16BF6AAE9DDF3A0EBCDEA6FAF9F54 /* MQTTUnsubPacket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTUnsubPacket.swift; path = SwiftMQTT/SwiftMQTT/Models/MQTTUnsubPacket.swift; sourceTree = "<group>"; };
+		1088B3DB097E8D8B3253D2C7FB714244 /* Pods-BedSideMonitorUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BedSideMonitorUITests.modulemap"; sourceTree = "<group>"; };
+		14308C03C767AFB6B9DB49D5FDC951A4 /* MQTTPubMsg.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTPubMsg.swift; path = SwiftMQTT/SwiftMQTT/Models/MQTTPubMsg.swift; sourceTree = "<group>"; };
+		16ACCF2C7ED4BAD72164C18E101F6F92 /* Pods-BedSideMonitorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BedSideMonitorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1C3E74756987B2D564ECD66DDB280921 /* SwiftMQTT-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftMQTT-prefix.pch"; sourceTree = "<group>"; };
+		1C8C133E32A0D130FA621587BBC22019 /* SwiftMQTT-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftMQTT-umbrella.h"; sourceTree = "<group>"; };
+		21A1955401DE9E97DAF9D02D6F37E456 /* MQTTSubAckPacket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTSubAckPacket.swift; path = SwiftMQTT/SwiftMQTT/Models/MQTTSubAckPacket.swift; sourceTree = "<group>"; };
+		24E39A1211EC87C1583D7D3979560227 /* SwiftMQTT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftMQTT.framework; path = SwiftMQTT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		27CF0E4D19726F0700E8A24D38643DDF /* MQTTConnAckPacket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTConnAckPacket.swift; path = SwiftMQTT/SwiftMQTT/Models/MQTTConnAckPacket.swift; sourceTree = "<group>"; };
+		2AF5D0B6968388BB23BA9DC44D9376B0 /* MQTTUnSubAckPacket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTUnSubAckPacket.swift; path = SwiftMQTT/SwiftMQTT/Models/MQTTUnSubAckPacket.swift; sourceTree = "<group>"; };
+		2B640B95FD6495F389B3A2B8B5FAB268 /* Pods-BedSideMonitorTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BedSideMonitorTests-resources.sh"; sourceTree = "<group>"; };
+		2B8E02B3668970B5494CBDE39DD07AA8 /* MQTTPubAck.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTPubAck.swift; path = SwiftMQTT/SwiftMQTT/Models/MQTTPubAck.swift; sourceTree = "<group>"; };
+		2D5BD953DF9292E47C86153D03DFD0F4 /* MQTTPacket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTPacket.swift; path = SwiftMQTT/SwiftMQTT/Models/MQTTPacket.swift; sourceTree = "<group>"; };
+		2E0A3E49A5C6CD34B6BB1596725BF37D /* Pods-BedSideMonitorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BedSideMonitorUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2E7568F6378DC0C1F6EA1C1211F51212 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FE687672CB100DEE17C1EB5F5404C18 /* SwiftMQTT-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftMQTT-dummy.m"; sourceTree = "<group>"; };
+		3283193BF69012C2A8FCFDB1445671E6 /* MQTTDisconnectPacket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTDisconnectPacket.swift; path = SwiftMQTT/SwiftMQTT/Models/MQTTDisconnectPacket.swift; sourceTree = "<group>"; };
+		385A1001B2CC16EC353DAFDFD6844131 /* Pods_BedSideMonitor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BedSideMonitor.framework; path = "Pods-BedSideMonitor.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A2E7849BE71000F913E11756B0B0DC4 /* Pods-BedSideMonitor-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BedSideMonitor-resources.sh"; sourceTree = "<group>"; };
+		43B440E99CD613B4686D2D629AA4EB43 /* Pods-BedSideMonitor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BedSideMonitor.release.xcconfig"; sourceTree = "<group>"; };
+		472E6F02FE3871C482419DE335656602 /* SwiftMQTT.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftMQTT.modulemap; sourceTree = "<group>"; };
+		4CAC29D0A7257213796B8AEDC2D9A9BF /* Pods-BedSideMonitorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BedSideMonitorTests.release.xcconfig"; sourceTree = "<group>"; };
+		50F398787A8BC7663040AB6E97C1176D /* MQTTPublishPacket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTPublishPacket.swift; path = SwiftMQTT/SwiftMQTT/Models/MQTTPublishPacket.swift; sourceTree = "<group>"; };
+		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		60340B5A8E95B98632C1C1B5808F7EAE /* Pods_BedSideMonitorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BedSideMonitorUITests.framework; path = "Pods-BedSideMonitorUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		65B21C65197FB66D4D65E1D6099D367A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B4DBCF497B50953ADE1E9594289F40C /* MQTTExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTExtensions.swift; path = SwiftMQTT/SwiftMQTT/MQTTExtensions.swift; sourceTree = "<group>"; };
+		6E74A5B8AE6E1D6B3C4C6B49EAA16046 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70650B50367076202FA3858396988D3B /* Pods-BedSideMonitorTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BedSideMonitorTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		70D88F52E726F8FDFDF626ED842610D1 /* Pods-BedSideMonitorTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BedSideMonitorTests.modulemap"; sourceTree = "<group>"; };
+		7FDC853F69375476D5224A8EDE18C4BF /* Pods-BedSideMonitorUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BedSideMonitorUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		8ED49D3D243672D7CBF066833EE4C83E /* MQTTPingPacket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTPingPacket.swift; path = SwiftMQTT/SwiftMQTT/Models/MQTTPingPacket.swift; sourceTree = "<group>"; };
+		8FEECCD35B96C94F42ECB31388C216B1 /* Pods-BedSideMonitor-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BedSideMonitor-acknowledgements.markdown"; sourceTree = "<group>"; };
+		93214C8F7340827577DEEA85855B3E0A /* Pods-BedSideMonitor.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BedSideMonitor.modulemap"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		99C9BDE472515F9367758044AEF3F57D /* Pods-BedSideMonitorTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BedSideMonitorTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9A48A2C383C542ADA91FC516568F185D /* MQTTSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTSession.swift; path = SwiftMQTT/SwiftMQTT/MQTTSession.swift; sourceTree = "<group>"; };
+		A36F2FBBC9CB8231D36AABE710F6F192 /* Pods-BedSideMonitor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BedSideMonitor.debug.xcconfig"; sourceTree = "<group>"; };
+		A58898DC24E00F527391FF42053834FF /* Pods-BedSideMonitorUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BedSideMonitorUITests-resources.sh"; sourceTree = "<group>"; };
+		ABE6E2E90F09007F722A2B2C380630D4 /* MQTTSubPacket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTSubPacket.swift; path = SwiftMQTT/SwiftMQTT/Models/MQTTSubPacket.swift; sourceTree = "<group>"; };
+		B754C2DFA35BB9B33EA8A79E85E4BE23 /* Pods-BedSideMonitorUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BedSideMonitorUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BCFAE2B321F1F4C035F506A7D87D20E6 /* Pods-BedSideMonitorUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BedSideMonitorUITests-frameworks.sh"; sourceTree = "<group>"; };
+		BE3CDACF30C1D3CDA4AD27E51B7AA7CD /* SwiftMQTT.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftMQTT.xcconfig; sourceTree = "<group>"; };
+		C0079FB1133D7B2C79E0B4847545064D /* MQTTSessionStream.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTSessionStream.swift; path = SwiftMQTT/SwiftMQTT/MQTTSessionStream.swift; sourceTree = "<group>"; };
+		CA0ED5C34D050A7D8832E3729C52B3BE /* Pods-BedSideMonitorUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BedSideMonitorUITests-umbrella.h"; sourceTree = "<group>"; };
+		CCA33BB0651A93009F6C6398E12BEE18 /* Pods-BedSideMonitorUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BedSideMonitorUITests-dummy.m"; sourceTree = "<group>"; };
+		D07A867390974D28DA10AAE684AE25A2 /* MQTTMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTMessage.swift; path = SwiftMQTT/SwiftMQTT/Models/MQTTMessage.swift; sourceTree = "<group>"; };
+		D35B26873C41B125C68E3D138564D283 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D599EABEC10CB6DB7C79FE46C602175F /* Pods-BedSideMonitorTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BedSideMonitorTests-dummy.m"; sourceTree = "<group>"; };
+		E1DC44924F3D7506CFAD698E28E506F6 /* Pods-BedSideMonitor-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BedSideMonitor-frameworks.sh"; sourceTree = "<group>"; };
+		E4E2C0DA147E4E9976162C6175A60E77 /* Pods-BedSideMonitorTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BedSideMonitorTests-umbrella.h"; sourceTree = "<group>"; };
+		E99FACCE6060082BFB9AB03626AB7130 /* Pods-BedSideMonitor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BedSideMonitor-dummy.m"; sourceTree = "<group>"; };
+		EA9F1FE90FCCB9F841F3FE4AEABC2AF9 /* Pods_BedSideMonitorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BedSideMonitorTests.framework; path = "Pods-BedSideMonitorTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBD00CAAE98D875119E231D1293C8BFC /* MQTTStreamable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTStreamable.swift; path = SwiftMQTT/SwiftMQTT/Models/MQTTStreamable.swift; sourceTree = "<group>"; };
+		F4C08A388C73409A68DC429D8442D430 /* MQTTPacketFixedHeader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTPacketFixedHeader.swift; path = SwiftMQTT/SwiftMQTT/Models/MQTTPacketFixedHeader.swift; sourceTree = "<group>"; };
+		F7B4C9AB301A5606514113AF46FF0098 /* Pods-BedSideMonitorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BedSideMonitorUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F856F622290AF207D33BFD8E71619E8C /* MQTTPingResp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTPingResp.swift; path = SwiftMQTT/SwiftMQTT/Models/MQTTPingResp.swift; sourceTree = "<group>"; };
+		FE16A2784552645330CA308B7C3FD6FB /* Pods-BedSideMonitorTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BedSideMonitorTests-frameworks.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D66E5A2A3324A78A5B153D55B365D3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56EC41D24FCB83BC8953342BD913DDD1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8345D19720A65B173C132FD19BA53084 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CF1D3AF46AB4DFF8CEB3EB86D938125 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E5D83790FEF66550B20DF641A625BB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F09B1C9AB7C91314EC492B7E3BC432F0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		956F97C504FE083C06F5BE8DB7B1486C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				075901CD5DEFB4EA0B2A0214D7B9D1BE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		33F07A67D14B9BD5807FE8FB95DF14EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				385A1001B2CC16EC353DAFDFD6844131 /* Pods_BedSideMonitor.framework */,
+				EA9F1FE90FCCB9F841F3FE4AEABC2AF9 /* Pods_BedSideMonitorTests.framework */,
+				60340B5A8E95B98632C1C1B5808F7EAE /* Pods_BedSideMonitorUITests.framework */,
+				24E39A1211EC87C1583D7D3979560227 /* SwiftMQTT.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		372624270BA4F2C17CED93B75EC0206D /* Pods-BedSideMonitorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D35B26873C41B125C68E3D138564D283 /* Info.plist */,
+				1088B3DB097E8D8B3253D2C7FB714244 /* Pods-BedSideMonitorUITests.modulemap */,
+				B754C2DFA35BB9B33EA8A79E85E4BE23 /* Pods-BedSideMonitorUITests-acknowledgements.markdown */,
+				7FDC853F69375476D5224A8EDE18C4BF /* Pods-BedSideMonitorUITests-acknowledgements.plist */,
+				CCA33BB0651A93009F6C6398E12BEE18 /* Pods-BedSideMonitorUITests-dummy.m */,
+				BCFAE2B321F1F4C035F506A7D87D20E6 /* Pods-BedSideMonitorUITests-frameworks.sh */,
+				A58898DC24E00F527391FF42053834FF /* Pods-BedSideMonitorUITests-resources.sh */,
+				CA0ED5C34D050A7D8832E3729C52B3BE /* Pods-BedSideMonitorUITests-umbrella.h */,
+				2E0A3E49A5C6CD34B6BB1596725BF37D /* Pods-BedSideMonitorUITests.debug.xcconfig */,
+				F7B4C9AB301A5606514113AF46FF0098 /* Pods-BedSideMonitorUITests.release.xcconfig */,
+			);
+			name = "Pods-BedSideMonitorUITests";
+			path = "Target Support Files/Pods-BedSideMonitorUITests";
+			sourceTree = "<group>";
+		};
+		3DC088714351F2E6E040BAFA1F8F2700 /* Pods-BedSideMonitorTests */ = {
+			isa = PBXGroup;
+			children = (
+				65B21C65197FB66D4D65E1D6099D367A /* Info.plist */,
+				70D88F52E726F8FDFDF626ED842610D1 /* Pods-BedSideMonitorTests.modulemap */,
+				99C9BDE472515F9367758044AEF3F57D /* Pods-BedSideMonitorTests-acknowledgements.markdown */,
+				70650B50367076202FA3858396988D3B /* Pods-BedSideMonitorTests-acknowledgements.plist */,
+				D599EABEC10CB6DB7C79FE46C602175F /* Pods-BedSideMonitorTests-dummy.m */,
+				FE16A2784552645330CA308B7C3FD6FB /* Pods-BedSideMonitorTests-frameworks.sh */,
+				2B640B95FD6495F389B3A2B8B5FAB268 /* Pods-BedSideMonitorTests-resources.sh */,
+				E4E2C0DA147E4E9976162C6175A60E77 /* Pods-BedSideMonitorTests-umbrella.h */,
+				16ACCF2C7ED4BAD72164C18E101F6F92 /* Pods-BedSideMonitorTests.debug.xcconfig */,
+				4CAC29D0A7257213796B8AEDC2D9A9BF /* Pods-BedSideMonitorTests.release.xcconfig */,
+			);
+			name = "Pods-BedSideMonitorTests";
+			path = "Target Support Files/Pods-BedSideMonitorTests";
+			sourceTree = "<group>";
+		};
+		4F9C4180F52A12CF97DD4BE694BC8A93 /* SwiftMQTT */ = {
+			isa = PBXGroup;
+			children = (
+				27CF0E4D19726F0700E8A24D38643DDF /* MQTTConnAckPacket.swift */,
+				0285894F5101C5724D84136C3B0F7DF8 /* MQTTConnectPacket.swift */,
+				3283193BF69012C2A8FCFDB1445671E6 /* MQTTDisconnectPacket.swift */,
+				6B4DBCF497B50953ADE1E9594289F40C /* MQTTExtensions.swift */,
+				D07A867390974D28DA10AAE684AE25A2 /* MQTTMessage.swift */,
+				2D5BD953DF9292E47C86153D03DFD0F4 /* MQTTPacket.swift */,
+				03395480D642FAB07EC49ED9FA2DEB17 /* MQTTPacketFactory.swift */,
+				F4C08A388C73409A68DC429D8442D430 /* MQTTPacketFixedHeader.swift */,
+				8ED49D3D243672D7CBF066833EE4C83E /* MQTTPingPacket.swift */,
+				F856F622290AF207D33BFD8E71619E8C /* MQTTPingResp.swift */,
+				2B8E02B3668970B5494CBDE39DD07AA8 /* MQTTPubAck.swift */,
+				50F398787A8BC7663040AB6E97C1176D /* MQTTPublishPacket.swift */,
+				14308C03C767AFB6B9DB49D5FDC951A4 /* MQTTPubMsg.swift */,
+				9A48A2C383C542ADA91FC516568F185D /* MQTTSession.swift */,
+				C0079FB1133D7B2C79E0B4847545064D /* MQTTSessionStream.swift */,
+				EBD00CAAE98D875119E231D1293C8BFC /* MQTTStreamable.swift */,
+				21A1955401DE9E97DAF9D02D6F37E456 /* MQTTSubAckPacket.swift */,
+				ABE6E2E90F09007F722A2B2C380630D4 /* MQTTSubPacket.swift */,
+				2AF5D0B6968388BB23BA9DC44D9376B0 /* MQTTUnSubAckPacket.swift */,
+				03D16BF6AAE9DDF3A0EBCDEA6FAF9F54 /* MQTTUnsubPacket.swift */,
+				B234FA26E1DF065780F7BEA26E086907 /* Support Files */,
+			);
+			name = SwiftMQTT;
+			path = SwiftMQTT;
+			sourceTree = "<group>";
+		};
+		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		71A1F6657CB7D1610D8B0720F5931F65 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				941E26A87B77066F41FC1587B8B6D709 /* Pods-BedSideMonitor */,
+				3DC088714351F2E6E040BAFA1F8F2700 /* Pods-BedSideMonitorTests */,
+				372624270BA4F2C17CED93B75EC0206D /* Pods-BedSideMonitorUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				B450077EB121BD6E4DBB14D39604620F /* Pods */,
+				33F07A67D14B9BD5807FE8FB95DF14EE /* Products */,
+				71A1F6657CB7D1610D8B0720F5931F65 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		941E26A87B77066F41FC1587B8B6D709 /* Pods-BedSideMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				2E7568F6378DC0C1F6EA1C1211F51212 /* Info.plist */,
+				93214C8F7340827577DEEA85855B3E0A /* Pods-BedSideMonitor.modulemap */,
+				8FEECCD35B96C94F42ECB31388C216B1 /* Pods-BedSideMonitor-acknowledgements.markdown */,
+				0030A9FB40DB828230E323A5013089BA /* Pods-BedSideMonitor-acknowledgements.plist */,
+				E99FACCE6060082BFB9AB03626AB7130 /* Pods-BedSideMonitor-dummy.m */,
+				E1DC44924F3D7506CFAD698E28E506F6 /* Pods-BedSideMonitor-frameworks.sh */,
+				3A2E7849BE71000F913E11756B0B0DC4 /* Pods-BedSideMonitor-resources.sh */,
+				0319EDFD3A3337171BEB55365070AFE6 /* Pods-BedSideMonitor-umbrella.h */,
+				A36F2FBBC9CB8231D36AABE710F6F192 /* Pods-BedSideMonitor.debug.xcconfig */,
+				43B440E99CD613B4686D2D629AA4EB43 /* Pods-BedSideMonitor.release.xcconfig */,
+			);
+			name = "Pods-BedSideMonitor";
+			path = "Target Support Files/Pods-BedSideMonitor";
+			sourceTree = "<group>";
+		};
+		B234FA26E1DF065780F7BEA26E086907 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6E74A5B8AE6E1D6B3C4C6B49EAA16046 /* Info.plist */,
+				472E6F02FE3871C482419DE335656602 /* SwiftMQTT.modulemap */,
+				BE3CDACF30C1D3CDA4AD27E51B7AA7CD /* SwiftMQTT.xcconfig */,
+				2FE687672CB100DEE17C1EB5F5404C18 /* SwiftMQTT-dummy.m */,
+				1C3E74756987B2D564ECD66DDB280921 /* SwiftMQTT-prefix.pch */,
+				1C8C133E32A0D130FA621587BBC22019 /* SwiftMQTT-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftMQTT";
+			sourceTree = "<group>";
+		};
+		B450077EB121BD6E4DBB14D39604620F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4F9C4180F52A12CF97DD4BE694BC8A93 /* SwiftMQTT */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E0D919E635D23B70123790B8308F8EF /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		201FA36C5D26E4C8961E4B4EF3018F8A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEDD73C13523D37C410720A6D2D0DE98 /* SwiftMQTT-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2915A275488188C67C218F3ACC89D511 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D9CE4D44B243089B78979726E85F6FD /* Pods-BedSideMonitor-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		346618D92E46131AFC6022A168D62343 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A64002CF4293C3FD08524ED0BA1C48BD /* Pods-BedSideMonitorTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		801E24B7F9EC74D44DF18757202467A4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D7133637BF2B0A412F74B0F350DFCC1 /* Pods-BedSideMonitorUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6CFF8C85850D265C1B2C320A90C112E8 /* Pods-BedSideMonitorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 594B57F2479E34CAC2186E37CFF41C2D /* Build configuration list for PBXNativeTarget "Pods-BedSideMonitorUITests" */;
+			buildPhases = (
+				0F91598B91ECC13B8DCBFB7C69BAA9F4 /* Sources */,
+				8E5D83790FEF66550B20DF641A625BB4 /* Frameworks */,
+				801E24B7F9EC74D44DF18757202467A4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6BE48240E0FF3A848A70E3F4CA9E194E /* PBXTargetDependency */,
+			);
+			name = "Pods-BedSideMonitorUITests";
+			productName = "Pods-BedSideMonitorUITests";
+			productReference = 60340B5A8E95B98632C1C1B5808F7EAE /* Pods_BedSideMonitorUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		90465D30EAC47A71ACF222C0B4495841 /* Pods-BedSideMonitorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27289E72DF295B9BA8060505C0F3D597 /* Build configuration list for PBXNativeTarget "Pods-BedSideMonitorTests" */;
+			buildPhases = (
+				8FAF8ECD31BD026C3986A8742ACB1254 /* Sources */,
+				3D66E5A2A3324A78A5B153D55B365D3A /* Frameworks */,
+				346618D92E46131AFC6022A168D62343 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B3FEFFBB252A45830778B3F4A1BBEFD4 /* PBXTargetDependency */,
+			);
+			name = "Pods-BedSideMonitorTests";
+			productName = "Pods-BedSideMonitorTests";
+			productReference = EA9F1FE90FCCB9F841F3FE4AEABC2AF9 /* Pods_BedSideMonitorTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C392BA1BC915B8D2EFB8138275B7319A /* SwiftMQTT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 010CB49C79A7CF953E4C11E72C458A4C /* Build configuration list for PBXNativeTarget "SwiftMQTT" */;
+			buildPhases = (
+				F7860DBB530973FD185C743CB01B9DFE /* Sources */,
+				956F97C504FE083C06F5BE8DB7B1486C /* Frameworks */,
+				201FA36C5D26E4C8961E4B4EF3018F8A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftMQTT;
+			productName = SwiftMQTT;
+			productReference = 24E39A1211EC87C1583D7D3979560227 /* SwiftMQTT.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C9879B62F6BD65A957E884DCE1D5E85C /* Pods-BedSideMonitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2B9D3D4F73EB28E90303F6726E59251 /* Build configuration list for PBXNativeTarget "Pods-BedSideMonitor" */;
+			buildPhases = (
+				FFC3636DB5EE872A38C8EE2721B4A226 /* Sources */,
+				8345D19720A65B173C132FD19BA53084 /* Frameworks */,
+				2915A275488188C67C218F3ACC89D511 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				292330A635BCF993B052046CEF0D3842 /* PBXTargetDependency */,
+			);
+			name = "Pods-BedSideMonitor";
+			productName = "Pods-BedSideMonitor";
+			productReference = 385A1001B2CC16EC353DAFDFD6844131 /* Pods_BedSideMonitor.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 33F07A67D14B9BD5807FE8FB95DF14EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C9879B62F6BD65A957E884DCE1D5E85C /* Pods-BedSideMonitor */,
+				90465D30EAC47A71ACF222C0B4495841 /* Pods-BedSideMonitorTests */,
+				6CFF8C85850D265C1B2C320A90C112E8 /* Pods-BedSideMonitorUITests */,
+				C392BA1BC915B8D2EFB8138275B7319A /* SwiftMQTT */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0F91598B91ECC13B8DCBFB7C69BAA9F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56473A0520B8E6BE58C51511E6E3BCEC /* Pods-BedSideMonitorUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FAF8ECD31BD026C3986A8742ACB1254 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09FFFE87E3D1624FBB2BC6CA110022C8 /* Pods-BedSideMonitorTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7860DBB530973FD185C743CB01B9DFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AABFB7AA742C444F5AD25878ABDABE53 /* MQTTConnAckPacket.swift in Sources */,
+				5C0C2B1C1ED23AD892C5DF297F618827 /* MQTTConnectPacket.swift in Sources */,
+				A50732AACF3F918A4E449BDB5D7CC3A0 /* MQTTDisconnectPacket.swift in Sources */,
+				2081DF0FC40141423DC365E129DB37DB /* MQTTExtensions.swift in Sources */,
+				A9C5E7DBCFF8C9E69B72F4794ABDDB86 /* MQTTMessage.swift in Sources */,
+				D9736763DE43EFAD4F21CD098DB31E24 /* MQTTPacket.swift in Sources */,
+				72459DA815446316218650099E7E8D25 /* MQTTPacketFactory.swift in Sources */,
+				39B3A84EF4F64F4144C249BD65E322BC /* MQTTPacketFixedHeader.swift in Sources */,
+				71A70C2287CAFE72F0E08F03F89A2338 /* MQTTPingPacket.swift in Sources */,
+				9A70B04349569582DE88F341FD748569 /* MQTTPingResp.swift in Sources */,
+				14179EA474580AA5AF7DD3C10011CDFC /* MQTTPubAck.swift in Sources */,
+				30F691C20731C511D28213812FD9035E /* MQTTPublishPacket.swift in Sources */,
+				25226492504DE4BD91BC458E8B54D3A6 /* MQTTPubMsg.swift in Sources */,
+				676AC13DC427BA04286FBACF9DC4EBFC /* MQTTSession.swift in Sources */,
+				A2689232701B201ECF9AD70043C1CCBE /* MQTTSessionStream.swift in Sources */,
+				C82D23DC65C667BBB0769E184FFEF4D7 /* MQTTStreamable.swift in Sources */,
+				59B01C9441520DED6B68D60FF8D88EFC /* MQTTSubAckPacket.swift in Sources */,
+				18710F49681E2F11130C0EF2006D224D /* MQTTSubPacket.swift in Sources */,
+				4ECDA81926B8E371B4DF9199C3B996B4 /* MQTTUnSubAckPacket.swift in Sources */,
+				CA06753581B4D7EEED89D23AD3BCBB2C /* MQTTUnsubPacket.swift in Sources */,
+				661F9C3A201DB7F60E05D5B87E8C863F /* SwiftMQTT-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFC3636DB5EE872A38C8EE2721B4A226 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C3097A74522B36C654FAD34DDC6341D /* Pods-BedSideMonitor-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		292330A635BCF993B052046CEF0D3842 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftMQTT;
+			target = C392BA1BC915B8D2EFB8138275B7319A /* SwiftMQTT */;
+			targetProxy = DE1D787CE69C2C8B4B89C1C2FE5C09D7 /* PBXContainerItemProxy */;
+		};
+		6BE48240E0FF3A848A70E3F4CA9E194E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-BedSideMonitor";
+			target = C9879B62F6BD65A957E884DCE1D5E85C /* Pods-BedSideMonitor */;
+			targetProxy = 142AA81DB489284F146418F10ACD312A /* PBXContainerItemProxy */;
+		};
+		B3FEFFBB252A45830778B3F4A1BBEFD4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-BedSideMonitor";
+			target = C9879B62F6BD65A957E884DCE1D5E85C /* Pods-BedSideMonitor */;
+			targetProxy = D309FA1F46E6E6D79182DCD7076649AE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0E12B7268EF0862DFEEB8B6B0BD7C9F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		110E2369A530DA4F992A188C84757D47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E0A3E49A5C6CD34B6BB1596725BF37D /* Pods-BedSideMonitorUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BedSideMonitorUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BedSideMonitorUITests/Pods-BedSideMonitorUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		57EB6D0DA25C3272F1D88A53850F7201 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16ACCF2C7ED4BAD72164C18E101F6F92 /* Pods-BedSideMonitorTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BedSideMonitorTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BedSideMonitorTests/Pods-BedSideMonitorTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		677B5F511097F59D2AA8DD9FC3E36CBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE3CDACF30C1D3CDA4AD27E51B7AA7CD /* SwiftMQTT.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftMQTT/SwiftMQTT-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftMQTT/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftMQTT/SwiftMQTT.modulemap";
+				PRODUCT_MODULE_NAME = SwiftMQTT;
+				PRODUCT_NAME = SwiftMQTT;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		800ABCF31803253C1247F91FB9D98374 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A36F2FBBC9CB8231D36AABE710F6F192 /* Pods-BedSideMonitor.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BedSideMonitor/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BedSideMonitor/Pods-BedSideMonitor.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		889C8355D0E98D98F3E8669F8BFB0CF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7B4C9AB301A5606514113AF46FF0098 /* Pods-BedSideMonitorUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BedSideMonitorUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BedSideMonitorUITests/Pods-BedSideMonitorUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9655F4273926ECA6A5F34243F2DBC5B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CAC29D0A7257213796B8AEDC2D9A9BF /* Pods-BedSideMonitorTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BedSideMonitorTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BedSideMonitorTests/Pods-BedSideMonitorTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A3E5391C69EC668B9C6477AD9B75A85B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43B440E99CD613B4686D2D629AA4EB43 /* Pods-BedSideMonitor.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BedSideMonitor/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BedSideMonitor/Pods-BedSideMonitor.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AB0EDC6AFF2ED8BDFC5B62333C351887 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE3CDACF30C1D3CDA4AD27E51B7AA7CD /* SwiftMQTT.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftMQTT/SwiftMQTT-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftMQTT/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftMQTT/SwiftMQTT.modulemap";
+				PRODUCT_MODULE_NAME = SwiftMQTT;
+				PRODUCT_NAME = SwiftMQTT;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CD8324D57CD462761E218EEA4EA91EC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		010CB49C79A7CF953E4C11E72C458A4C /* Build configuration list for PBXNativeTarget "SwiftMQTT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				677B5F511097F59D2AA8DD9FC3E36CBE /* Debug */,
+				AB0EDC6AFF2ED8BDFC5B62333C351887 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27289E72DF295B9BA8060505C0F3D597 /* Build configuration list for PBXNativeTarget "Pods-BedSideMonitorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57EB6D0DA25C3272F1D88A53850F7201 /* Debug */,
+				9655F4273926ECA6A5F34243F2DBC5B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E12B7268EF0862DFEEB8B6B0BD7C9F4 /* Debug */,
+				CD8324D57CD462761E218EEA4EA91EC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		594B57F2479E34CAC2186E37CFF41C2D /* Build configuration list for PBXNativeTarget "Pods-BedSideMonitorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				110E2369A530DA4F992A188C84757D47 /* Debug */,
+				889C8355D0E98D98F3E8669F8BFB0CF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2B9D3D4F73EB28E90303F6726E59251 /* Build configuration list for PBXNativeTarget "Pods-BedSideMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				800ABCF31803253C1247F91FB9D98374 /* Debug */,
+				A3E5391C69EC668B9C6477AD9B75A85B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

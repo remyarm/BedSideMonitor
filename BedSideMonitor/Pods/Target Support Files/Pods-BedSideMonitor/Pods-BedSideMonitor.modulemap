@@ -1,0 +1,6 @@
+framework module Pods_BedSideMonitor {
+  umbrella header "Pods-BedSideMonitor-umbrella.h"
+
+  export *
+  module * { export * }
+}
