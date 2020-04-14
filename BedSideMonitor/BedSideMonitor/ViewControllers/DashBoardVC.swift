@@ -10,6 +10,7 @@ import UIKit
 
 class DashBoardVC: UIViewController {
 
+    @IBOutlet weak var menuTable: UITableView!
     @IBOutlet weak var menuLeadingConstraint: NSLayoutConstraint!
     @IBOutlet weak var menuList: UITableView!
     var viewmodel = DashBoardViewModel()
@@ -19,6 +20,7 @@ class DashBoardVC: UIViewController {
        // menuList.register(MenuCell.self, forCellReuseIdentifier: MenuCell.identifier)
         // Do any additional setup after loading the view, typically from a nib.
         toggleMenu()
+        menuList.backgroundColor = UIColor.clear
     }
     func toggleMenu() {
         if self.menuToggle {
@@ -50,5 +52,16 @@ extension DashBoardVC: UITableViewDelegate,UITableViewDataSource {
         return tableCell
     }
     
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch viewmodel.deviceList[indexPath.row] {
+        case MenuList.home.rawValue:
+            
+            break
+        case MenuList.ecg.rawValue: break
+            
+        default:
+            break
+            
+        }
+    }
 }

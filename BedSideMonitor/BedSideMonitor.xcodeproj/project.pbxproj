@@ -11,6 +11,8 @@
 		69CD0320C1064325DCD7ED13 /* Pods_BedSideMonitorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47D279D495228F7A677DA6A7 /* Pods_BedSideMonitorUITests.framework */; };
 		8C80476824456EF200BA2CAE /* DashBoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C80476724456EF200BA2CAE /* DashBoardViewModel.swift */; };
 		8C80476A244577FE00BA2CAE /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C804769244577FD00BA2CAE /* MenuCell.swift */; };
+		8C80476D2445A5F000BA2CAE /* GraphUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C80476C2445A5F000BA2CAE /* GraphUI.swift */; };
+		8C80476F2445A87E00BA2CAE /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C80476E2445A87E00BA2CAE /* GraphViewController.swift */; };
 		8CE92FC42444868D0057682B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE92FC32444868D0057682B /* AppDelegate.swift */; };
 		8CE92FC62444868E0057682B /* DashBoardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE92FC52444868E0057682B /* DashBoardVC.swift */; };
 		8CE92FC92444868E0057682B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CE92FC72444868E0057682B /* Main.storyboard */; };
@@ -50,6 +52,8 @@
 		5733DDBD30957617304B276F /* Pods-BedSideMonitorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BedSideMonitorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BedSideMonitorTests/Pods-BedSideMonitorTests.release.xcconfig"; sourceTree = "<group>"; };
 		8C80476724456EF200BA2CAE /* DashBoardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardViewModel.swift; sourceTree = "<group>"; };
 		8C804769244577FD00BA2CAE /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		8C80476C2445A5F000BA2CAE /* GraphUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphUI.swift; sourceTree = "<group>"; };
+		8C80476E2445A87E00BA2CAE /* GraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
 		8CE92FC02444868D0057682B /* BedSideMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BedSideMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CE92FC32444868D0057682B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CE92FC52444868E0057682B /* DashBoardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardVC.swift; sourceTree = "<group>"; };
@@ -132,8 +136,17 @@
 			children = (
 				8CE92FC52444868E0057682B /* DashBoardVC.swift */,
 				8C804769244577FD00BA2CAE /* MenuCell.swift */,
+				8C80476E2445A87E00BA2CAE /* GraphViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8C80476B2445A5D300BA2CAE /* GraphView */ = {
+			isa = PBXGroup;
+			children = (
+				8C80476C2445A5F000BA2CAE /* GraphUI.swift */,
+			);
+			path = GraphView;
 			sourceTree = "<group>";
 		};
 		8CE92FB72444868D0057682B = {
@@ -161,6 +174,7 @@
 		8CE92FC22444868D0057682B /* BedSideMonitor */ = {
 			isa = PBXGroup;
 			children = (
+				8C80476B2445A5D300BA2CAE /* GraphView */,
 				8C80476024448B6B00BA2CAE /* ViewControllers */,
 				8CE92FF42444874A0057682B /* ViewModels */,
 				8CE92FF1244487000057682B /* MQTTConnector */,
@@ -430,6 +444,8 @@
 				8CE92FC42444868D0057682B /* AppDelegate.swift in Sources */,
 				8CE92FF82444875C0057682B /* Result.swift in Sources */,
 				8CE92FFD2444876E0057682B /* MQTTConnector_Extension.swift in Sources */,
+				8C80476F2445A87E00BA2CAE /* GraphViewController.swift in Sources */,
+				8C80476D2445A5F000BA2CAE /* GraphUI.swift in Sources */,
 				8C80476824456EF200BA2CAE /* DashBoardViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
