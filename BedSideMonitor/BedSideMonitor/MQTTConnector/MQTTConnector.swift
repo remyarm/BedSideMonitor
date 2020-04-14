@@ -15,23 +15,26 @@ protocol MQTTManager {
 
 class MQTTConnector: MQTTSessionDelegate {
 
+    let  mqttSession = MQTTSession(
+        host: "broker.hivemq.com",
+        port: 1883,
+        clientID: "", // must be unique to the client
+        cleanSession: true,
+        keepAlive: 15,
+        useSSL: false
+    )
+    
 //    let  mqttSession = MQTTSession(
-//        host: "broker.hivemq.com",
+//        host: "hclquest.cloudapp.net",
 //        port: 1883,
-//        clientID: "", // must be unique to the client
+//        clientID: "mdpnp", // must be unique to the client
 //        cleanSession: true,
 //        keepAlive: 15,
 //        useSSL: false
 //    )
     
-    let  mqttSession = MQTTSession(
-        host: "hclquest.cloudapp.net",
-        port: 1883,
-        clientID: "mdpnp", // must be unique to the client
-        cleanSession: true,
-        keepAlive: 15,
-        useSSL: false
-    )
+    var connectionHandler: ((_ result: Result<Bool>) -> Void)? = nil
+    var receivedvalues: ((_ value: [Double]) -> Void)? = nil
     
     func connectToServer() {
         mqttSession.connect { (error) in
@@ -48,7 +51,10 @@ class MQTTConnector: MQTTSessionDelegate {
     func mqttDidReceive(message: MQTTMessage, from session: MQTTSession) {
         print(message.topic)
         print(message.stringRepresentation ?? "")
-        self.didReceiveMessage(data: message.payload)
+        guard let value = message.stringRepresentation else {
+            return
+        }
+        self.didReceiveMessage(values: value)
         
     }
        

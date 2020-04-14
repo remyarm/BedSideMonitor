@@ -9,7 +9,7 @@
 import UIKit
 
 class DashBoardVC: UIViewController {
-
+    
     @IBOutlet weak var menuTable: UITableView!
     @IBOutlet weak var menuLeadingConstraint: NSLayoutConstraint!
     @IBOutlet weak var menuList: UITableView!

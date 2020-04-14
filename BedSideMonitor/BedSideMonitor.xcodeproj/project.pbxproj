@@ -13,6 +13,7 @@
 		8C80476A244577FE00BA2CAE /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C804769244577FD00BA2CAE /* MenuCell.swift */; };
 		8C80476D2445A5F000BA2CAE /* GraphUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C80476C2445A5F000BA2CAE /* GraphUI.swift */; };
 		8C80476F2445A87E00BA2CAE /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C80476E2445A87E00BA2CAE /* GraphViewController.swift */; };
+		8C80477124460B8300BA2CAE /* GraphViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C80477024460B8300BA2CAE /* GraphViewModel.swift */; };
 		8CE92FC42444868D0057682B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE92FC32444868D0057682B /* AppDelegate.swift */; };
 		8CE92FC62444868E0057682B /* DashBoardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE92FC52444868E0057682B /* DashBoardVC.swift */; };
 		8CE92FC92444868E0057682B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CE92FC72444868E0057682B /* Main.storyboard */; };
@@ -54,6 +55,7 @@
 		8C804769244577FD00BA2CAE /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		8C80476C2445A5F000BA2CAE /* GraphUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphUI.swift; sourceTree = "<group>"; };
 		8C80476E2445A87E00BA2CAE /* GraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
+		8C80477024460B8300BA2CAE /* GraphViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewModel.swift; sourceTree = "<group>"; };
 		8CE92FC02444868D0057682B /* BedSideMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BedSideMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CE92FC32444868D0057682B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CE92FC52444868E0057682B /* DashBoardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardVC.swift; sourceTree = "<group>"; };
@@ -222,6 +224,7 @@
 				8CE92FF52444875C0057682B /* MainViewModel.swift */,
 				8CE92FF62444875C0057682B /* Result.swift */,
 				8C80476724456EF200BA2CAE /* DashBoardViewModel.swift */,
+				8C80477024460B8300BA2CAE /* GraphViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -437,6 +440,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CE92FFF2444876E0057682B /* MQTTConnector.swift in Sources */,
+				8C80477124460B8300BA2CAE /* GraphViewModel.swift in Sources */,
 				8CE930002444876E0057682B /* MQTTConnector_Combine_Extension.swift in Sources */,
 				8C80476A244577FE00BA2CAE /* MenuCell.swift in Sources */,
 				8CE92FC62444868E0057682B /* DashBoardVC.swift in Sources */,

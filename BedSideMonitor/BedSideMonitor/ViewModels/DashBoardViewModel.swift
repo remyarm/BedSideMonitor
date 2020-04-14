@@ -17,6 +17,7 @@ enum MenuList: String, CaseIterable {
         return allValues
     }
 }
+
 struct DashBoardViewModel
 {
     let deviceList = MenuList.menuList()

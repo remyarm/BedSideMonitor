@@ -9,12 +9,22 @@
 import Foundation
 
 extension MQTTConnector: MQTTConnection {
+    
     func connect(result: Result<Bool>) {
-        
+        guard let handler = connectionHandler else {return}
+        handler(result)
     }
     
-    func didReceiveMessage(data: Data) {
-        
+    func didReceiveMessage(values: String) {
+        guard let messageHandler = receivedvalues else {return}
+        let leadArray = values.split(separator: ",")
+        print("Lead Array" , leadArray)
+        let valueArray = leadArray.map { (value) -> Double in
+            let array = value.split(separator: "#")
+            guard let secondValue = array.last , let dobleValue = Double(secondValue) else { return 0.0}
+            return dobleValue
+        }
+        messageHandler(valueArray)
     }
     
     

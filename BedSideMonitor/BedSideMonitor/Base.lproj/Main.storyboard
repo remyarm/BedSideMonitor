@@ -180,6 +180,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="feM-As-rJ2"/>
                     </view>
+                    <connections>
+                        <outlet property="graphI" destination="RLV-q3-90v" id="gpb-Yk-eub"/>
+                        <outlet property="graphII" destination="Gr6-0x-QVY" id="U14-kJ-Tsf"/>
+                        <outlet property="graphIII" destination="J4w-jB-HBa" id="yIz-vz-7WA"/>
+                        <outlet property="leadIIIScrollView" destination="o1r-HE-WHZ" id="TSC-0y-v4x"/>
+                        <outlet property="leadIIScrollView" destination="DIO-AW-0AQ" id="Nl2-fo-6PE"/>
+                        <outlet property="leadIScrollView" destination="8ZS-cq-1Dh" id="u5C-H6-rqv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bf7-B7-yT2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -9,6 +9,7 @@
 import Foundation
 
 protocol MQTTConnection {
-    func connect(result: Result<Bool>)
-    func didReceiveMessage(data: Data)
+     func connect(result: Result<Bool>)
+     func didReceiveMessage(values: String)
 }
+
