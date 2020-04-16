@@ -59,7 +59,10 @@ class GraphUI: UIView {
         context?.clear(self.bounds)
         x_Axis = 0.0
 //        context?.setFillColor(UIColor(displayP3Red: <#T##CGFloat#>, green: <#T##CGFloat#>, blue: <#T##CGFloat#>, alpha: <#T##CGFloat#>))
-        context?.setFillColor(UIColor(red: 80.0/255, green: 69.0/255.0, blue: 99.0/255.0, alpha: 1.0).cgColor)
+//        context?.setFillColor(UIColor(red: 80.0/255, green: 69.0/255.0, blue: 99.0/255.0, alpha: 1.0).cgColor)
+        
+        context?.setFillColor(UIColor(red: 0.0/255, green: 0.0/255.0, blue: 0.0/255.0, alpha: 1.0).cgColor)
+        
         context?.fill(self.bounds)
         context?.setLineWidth(0.6)
         context?.setStrokeColor(UIColor.black.cgColor)
