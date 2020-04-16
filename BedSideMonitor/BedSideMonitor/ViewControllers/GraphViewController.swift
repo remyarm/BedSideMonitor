@@ -23,6 +23,8 @@ class GraphViewController: UIViewController {
     var viewModel = GraphViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = "ECG Monitor"
+        navigationItem.backBarButtonItem?.title = ""
         viewModel.mqttConnector.connectionHandler = { [weak self]
             result in
             self?.connectionStatus(result: result)
@@ -42,5 +44,23 @@ class GraphViewController: UIViewController {
         graphI.addValue(value: value[0])
         graphII.addValue(value: value[1])
         graphIII.addValue(value: value[2])
+        
+        if (graphI.currentRect.x > leadIScrollView.frame.width) {
+            UIView.animate(withDuration: 0.3) {
+                self.leadIScrollView.scrollRectToVisible(CGRect(x: self.graphI.currentRect.x, y: self.graphI.currentRect.y, width: 50, height: 50), animated: false)
+            }
+        }
+        
+        if (graphII.currentRect.x > leadIIScrollView.frame.width) {
+            UIView.animate(withDuration: 0.3) {
+                self.leadIIScrollView.scrollRectToVisible(CGRect(x: self.graphII.currentRect.x, y: self.graphII.currentRect.y, width: 50, height: 50), animated: false)
+            }
+        }
+        
+        if (graphIII.currentRect.x > leadIIIScrollView.frame.width) {
+            UIView.animate(withDuration: 0.3) {
+                self.leadIIIScrollView.scrollRectToVisible(CGRect(x: self.graphIII.currentRect.x, y: self.graphIII.currentRect.y, width: 50, height: 50), animated: false)
+            }
+        }
     }
 }
