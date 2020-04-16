@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Graph View Controller-->
+        <!--Title-->
         <scene sceneID="o8p-7a-0E1">
             <objects>
                 <viewController storyboardIdentifier="GraphViewController" id="CuW-63-rR9" customClass="GraphViewController" customModule="BedSideMonitor" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="BDE-wv-55d">
-                                <rect key="frame" x="0.0" y="40" width="375" height="167"/>
+                                <rect key="frame" x="0.0" y="84" width="375" height="167"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ECG - Lead - I" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YlX-TU-vjn">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
@@ -72,7 +72,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="igA-Kw-rfq">
-                                <rect key="frame" x="0.0" y="227" width="375" height="166.5"/>
+                                <rect key="frame" x="0.0" y="271" width="375" height="166.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ECG - Lead - II" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jm6-TW-H65">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="17.5"/>
@@ -116,7 +116,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="z5r-N8-mpl">
-                                <rect key="frame" x="0.0" y="413.5" width="375" height="187"/>
+                                <rect key="frame" x="0.0" y="457.5" width="375" height="187"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ECG - Lead - III" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dtU-jd-XV4">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="17.5"/>
@@ -179,13 +179,24 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="feM-As-rJ2"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="xt9-Xz-lgx">
+                        <barButtonItem key="rightBarButtonItem" title="Auto" id="5Ki-lb-8rT">
+                            <connections>
+                                <action selector="rightButtonTapped:" destination="CuW-63-rR9" id="qxD-p9-M95"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="graphI" destination="RLV-q3-90v" id="gpb-Yk-eub"/>
                         <outlet property="graphII" destination="Gr6-0x-QVY" id="U14-kJ-Tsf"/>
                         <outlet property="graphIII" destination="J4w-jB-HBa" id="yIz-vz-7WA"/>
                         <outlet property="leadIIIScrollView" destination="o1r-HE-WHZ" id="TSC-0y-v4x"/>
+                        <outlet property="leadIIIWidth" destination="aPM-nZ-umn" id="ULf-OM-tlC"/>
                         <outlet property="leadIIScrollView" destination="DIO-AW-0AQ" id="Nl2-fo-6PE"/>
+                        <outlet property="leadIIwidth" destination="q4I-FE-sio" id="8uW-7z-WpC"/>
                         <outlet property="leadIScrollView" destination="8ZS-cq-1Dh" id="u5C-H6-rqv"/>
+                        <outlet property="width" destination="rdS-Cb-MbR" id="7mT-em-e3D"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bf7-B7-yT2" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -201,7 +212,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dNk-ky-7mE" userLabel="Menu">
-                                <rect key="frame" x="0.0" y="64" width="262.5" height="603"/>
+                                <rect key="frame" x="-263" y="64" width="262.5" height="603"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ooB-M2-Az5" userLabel="MenuList">
                                         <rect key="frame" x="0.0" y="0.0" width="262.5" height="603"/>
@@ -250,8 +261,8 @@
                                     <constraint firstAttribute="bottom" secondItem="ooB-M2-Az5" secondAttribute="bottom" id="nYo-U4-gam"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BedSideMonitor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xW4-Qw-iVY">
-                                <rect key="frame" x="119.5" y="324.5" width="136" height="18.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open ICE BedSideMonitor" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xW4-Qw-iVY">
+                                <rect key="frame" x="78.5" y="324.5" width="218" height="18.5"/>
                                 <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="16"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -264,7 +275,7 @@
                             <constraint firstItem="xW4-Qw-iVY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ael-bf-amJ"/>
                             <constraint firstItem="dNk-ky-7mE" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ipw-sz-L7e"/>
                             <constraint firstItem="dNk-ky-7mE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="k5l-ya-paq"/>
-                            <constraint firstItem="dNk-ky-7mE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vc2-iy-4Ho"/>
+                            <constraint firstItem="dNk-ky-7mE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="-263" id="vc2-iy-4Ho"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

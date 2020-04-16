@@ -13,10 +13,10 @@ struct Graph {
     static let kGraphHeight = 150
     static let kDefaultGraphWidth = 900
     static let kOffsetX = 0
-    static let kStepX = 30
+    static let kStepX = 5
     static let kGraphBottom = 300
     static let kGrpahTop = 0
-    static let kStepY = 15
+    static let kStepY = 5
     static let kOffsetY = 0
 }
 class GraphUI: UIView {
@@ -90,7 +90,9 @@ class GraphUI: UIView {
             print(rect)
             context?.translateBy(x: rect.origin.x, y: rect.origin.y + rect.size.height)
             context?.scaleBy(x: 1.0, y: -1.0)
-            String(x_Axis).draw(in: CGRect(origin: CGPoint(x: (i * Graph.kStepX), y: 0), size: CGSize(width: 50, height: 50)), withAttributes: attrs)
+//            String(x_Axis).draw(in: CGRect(origin: CGPoint(x: (i * Graph.kStepX), y: 0), size: CGSize(width: 50, height: 50)), withAttributes: attrs)
+            String(x_Axis).draw(in: CGRect(origin: CGPoint(x: (i * 30), y: 0), size: CGSize(width: 50, height: 50)), withAttributes: attrs)
+
             x_Axis = x_Axis + 1
         }
         context?.strokePath()

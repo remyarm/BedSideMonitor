@@ -14,12 +14,18 @@ class GraphViewController: UIViewController {
     @IBOutlet weak var leadIScrollView: UIScrollView!
     @IBOutlet weak var leadIIScrollView: UIScrollView!
     @IBOutlet weak var leadIIIScrollView: UIScrollView!
+   
+    @IBOutlet weak var leadIIwidth: NSLayoutConstraint!
     
+    @IBOutlet weak var leadIIIWidth: NSLayoutConstraint!
+    @IBOutlet weak var width: NSLayoutConstraint!
     @IBOutlet weak var graphI: GraphUI!
     
     @IBOutlet weak var graphII: GraphUI!
     
     @IBOutlet weak var graphIII: GraphUI!
+    
+    var timer: Timer? = nil
     var viewModel = GraphViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +44,23 @@ class GraphViewController: UIViewController {
     
     func connectionStatus(result: Result<Bool>) -> Void {
         
+        
+        
+    }
+    
+    @IBAction func rightButtonTapped(_ sender: Any) {
+        if (timer == nil) {
+            timer = Timer.scheduledTimer(withTimeInterval: 0, repeats: true) { timer in
+                let value1 = Double.random(in: 0.0 ... 0.1)
+                let value2 = Double.random(in: 0.0 ... 0.1)
+                let value3 = Double.random(in: 0.0 ... 0.1)
+                self.valueReceived(value: [value1,value2,value3])
+            }
+        } else {
+            timer?.invalidate()
+            timer = nil
+        }
+       
     }
     
     func valueReceived(value: [Double]) {
@@ -48,18 +71,21 @@ class GraphViewController: UIViewController {
         if (graphI.currentRect.x > leadIScrollView.frame.width) {
             UIView.animate(withDuration: 0.3) {
                 self.leadIScrollView.scrollRectToVisible(CGRect(x: self.graphI.currentRect.x, y: self.graphI.currentRect.y, width: 50, height: 50), animated: false)
+                self.width.constant = self.width.constant + 10
             }
         }
         
         if (graphII.currentRect.x > leadIIScrollView.frame.width) {
             UIView.animate(withDuration: 0.3) {
                 self.leadIIScrollView.scrollRectToVisible(CGRect(x: self.graphII.currentRect.x, y: self.graphII.currentRect.y, width: 50, height: 50), animated: false)
+                self.leadIIwidth.constant = self.leadIIwidth.constant + 10
             }
         }
         
         if (graphIII.currentRect.x > leadIIIScrollView.frame.width) {
             UIView.animate(withDuration: 0.3) {
                 self.leadIIIScrollView.scrollRectToVisible(CGRect(x: self.graphIII.currentRect.x, y: self.graphIII.currentRect.y, width: 50, height: 50), animated: false)
+                 self.leadIIIWidth.constant = self.leadIIIWidth.constant + 10
             }
         }
     }
